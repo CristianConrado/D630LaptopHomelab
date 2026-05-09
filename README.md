@@ -52,6 +52,3 @@ This homelab is both a learning project and a way to give new life to old hardwa
 The Dell D630 was my first laptop, and instead of letting it collect dust, it now serves as a small self-hosted infrastructure server running services I use every day.
 
 Old hardware still has value.
-
-```
-```
