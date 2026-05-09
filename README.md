@@ -21,13 +21,13 @@ The goal is to build a lightweight, modular, and secure homelab capable of runni
 | -------------- | ----------------------- |
 | Debian         | Base operating system   |
 | Docker         | Container runtime       |
-| Docker Compose | Container orchestration |
+| Dockhand       | Docker stack management |
 | Caddy          | Reverse proxy and HTTPS |
 | NetBird        | Secure VPN access       |
 | AdGuard Home   | DNS filtering           |
 | Homepage       | Dashboard               |
-| Uptime Kuma    | Monitoring              |
-| Beszel         | Lightweight monitoring  |
+| Uptime Kuma    | Monitoring services     |
+| Beszel         | Monitoring Hardware     |
 | Vaultwarden    | Password manager        |
 | Vikunja        | Task management         |
 | n8n            | Automation              |
