@@ -79,3 +79,10 @@ File synchronization between devices.
 
 ### VaultWarden
 Self-hosted password manager.
+
+---
+
+## Backups
+
+### Rclone
+Automated backups and synchronization.
