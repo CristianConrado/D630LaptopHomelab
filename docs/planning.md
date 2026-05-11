@@ -74,9 +74,6 @@ Workflow automation platform.
 ### Vikunja
 Task manager / TODO management.
 
-### Syncthing
-File synchronization between devices.
-
 ### VaultWarden
 Self-hosted password manager.
 
