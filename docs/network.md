@@ -28,8 +28,8 @@
 │ AdGuard Home   │       │ Homepage           │      │ n8n                │
 │ Homepage       │       │ Beszel             │      │ Vikunja            │
 │ Caddy          │       │ Uptime Kuma        │      │ Vaultwarden        │
-└────────────────┘       │ Caddy              │      │ Syncthing          │
-                         └────────────────────┘      │ Caddy              │
+└────────────────┘       │ Caddy              │      │ Caddy              │
+                         └────────────────────┘      │               │
                                                      └────────────────────┘
 
 
@@ -127,7 +127,6 @@ Main application services.
 * n8n
 * Vikunja
 * Vaultwarden
-* Syncthing
 * Caddy
 
 ### Purpose
@@ -135,31 +134,6 @@ Main application services.
 * Automation
 * Productivity
 * Password management
-* File synchronization
 
 ---
 
-# 🔥 Important Architecture Notes
-
-## Caddy Connectivity
-
-Caddy MUST be connected to every Docker network.
-
-This allows it to:
-
-* Reach internal containers
-* Reverse proxy services
-* Centralize HTTPS handling
-* Manage TLS certificates
-
-Example:
-
-```yaml
-services:
-  caddy:
-    networks:
-      - dns_net
-      - monitoring_net
-      - network_net
-      - services_net
-```
