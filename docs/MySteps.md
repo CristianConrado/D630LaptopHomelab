@@ -8,11 +8,30 @@
 
 ---
 
+## 0. Flashing the USB with Rufus
+
+Download the `netinst` ISO from `https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/` and open Rufus with the following settings:
+
+- Device → your USB stick
+- Boot selection → the downloaded ISO
+- Partition scheme → **MBR**
+- File system → FAT32
+- Everything else → default
+
+![Rufus configured with Debian netinst ISO](screenshots/rufus-settings.png)
+
+Click START and wait for it to finish.
+
+---
+
 ## 1. Boot from USB
 
 1. Power on the D630
 2. Press **F12** repeatedly during boot → boot menu appears
 3. Select your USB drive
+
+![F12 boot menu on the D630](screenshots/boot-menu.png)
+
 4. In the Debian menu select **Install** (not Graphical Install — same thing, no mouse)
 
 ---
@@ -52,6 +71,8 @@ Select **Guided - use entire disk**
 - All files in one partition
 - Finish partitioning and write changes to disk → **Yes**
 
+![Partitioning confirmation screen](screenshots/partitioning-confirm.png)
+
 > ⚠️ This will erase everything on the D630's internal disk
 
 ---
@@ -83,6 +104,8 @@ Use spacebar to check/uncheck:
 
 **Only SSH server and standard system utilities.** Everything else unchecked.
 
+![Software selection with only SSH server and standard system utilities checked](screenshots/software-selection.png)
+
 ---
 
 ## 8. GRUB
@@ -105,6 +128,8 @@ Then from your main PC:
 ```bash
 ssh youruser@192.168.x.x
 ```
+
+![First successful SSH connection](screenshots/first-ssh.png)
 
 From this point on, the D630 can sit in a corner. Everything is SSH.
 
