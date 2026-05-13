@@ -12,7 +12,7 @@
 
 Download the `netinst` ISO from `https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/` and open Rufus with the following settings:
 
-![Rufus configured with Debian netinst ISO](screenshots/debian-download.png)
+![Debian file](screenshots/debian-download.png)
 
 - Device → your USB stick
 - Boot selection → the downloaded ISO
