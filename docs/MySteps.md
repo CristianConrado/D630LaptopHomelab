@@ -2,7 +2,7 @@
 
 ## Before you start
 
-- USB stick (min 1GB) flashed with `debian-12.x.x-amd64-netinst.iso` via Rufus (MBR)
+- USB stick (min 1GB) flashed with `debian-x.x.x-amd64-netinst.iso` via Rufus (MBR)
 - Ethernet cable connected to the D630
 - Router with DHCP enabled (standard home setup)
 
@@ -11,6 +11,8 @@
 ## 0. Flashing the USB with Rufus
 
 Download the `netinst` ISO from `https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/` and open Rufus with the following settings:
+
+![Rufus configured with Debian netinst ISO](screenshots/debian-download.png)
 
 - Device → your USB stick
 - Boot selection → the downloaded ISO
