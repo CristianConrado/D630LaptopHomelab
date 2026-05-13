@@ -21,8 +21,10 @@ Download the `netinst` ISO from `https://cdimage.debian.org/debian-cd/current/am
 - Everything else → default
 
 ![Rufus configured with Debian netinst ISO](screenshots/rufus-settings.png)
+> It is in spanish but the configuration is the same.
 
 Click START and wait for it to finish.
+> ⚠️ YOU WILL KNOW WHEN IT IS DONE BECAUSE THE BAR IS FULL, no need to click START again
 
 ---
 
