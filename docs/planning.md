@@ -83,3 +83,7 @@ Self-hosted password manager.
 
 ### Rclone
 Automated backups and synchronization.
+
+
+## IDEAS
+Floci to learn AWS, could i learn IaC with it?
