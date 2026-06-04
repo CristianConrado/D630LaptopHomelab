@@ -2,12 +2,12 @@
 
 ## Overview
 
-All external access goes through **NetBird mesh VPN**. There is no port forwarding, no exposed services, no public-facing infrastructure. Your device joins the mesh and talks directly to the D630's NetBird IP. Caddy listens on that IP and routes traffic to the appropriate container.
+All external access goes through **Tailscale mesh VPN**. There is no port forwarding, no exposed services, no public-facing infrastructure. Your device joins the mesh and talks directly to the D630's Tailscale IP. Caddy listens on that IP and routes traffic to the appropriate container.
 
 ```
-Your device (NetBird client)
+Your device (Tailscale client)
         │
-        └──► D630 NetBird IP ──► Caddy ──► container
+        └──► D630 Tailscale ──► Caddy ──► container
 ```
 
 ---
@@ -19,7 +19,7 @@ Each functional group lives in its own isolated Docker network. Caddy is the onl
 | Network | Containers |
 |---|---|
 | `proxy_net` | Caddy |
-| `network_net` | NetBird |
+| `network_net` | Tailscale |
 | `dns_net` | AdGuard Home |
 | `monitoring_net` | Beszel, Uptime Kuma, Homepage |
 | `services_net` | n8n, Vikunja, VaultWarden |
@@ -49,17 +49,17 @@ No public domain required. Caddy runs as an internal CA (`tls internal`), issues
 2. Install it as a trusted CA on your device
 3. All internal services show a valid padlock — no browser warnings
 
-AdGuard Home handles DNS rewrites so hostnames resolve to the D630's NetBird IP:
+AdGuard Home handles DNS rewrites so hostnames resolve to the D630's Tailscale IP:
 
 | Hostname | Resolves to |
 |---|---|
-| `adguard.home` | D630 NetBird IP |
-| `homepage.home` | D630 NetBird IP |
-| `beszel.home` | D630 NetBird IP |
-| `uptime.home` | D630 NetBird IP |
-| `n8n.home` | D630 NetBird IP |
-| `vikunja.home` | D630 NetBird IP |
-| `vaultwarden.home` | D630 NetBird IP |
+| `adguard.home` | D630 Tailscale IP |
+| `homepage.home` | D630 Tailscale IP |
+| `beszel.home` | D630 Tailscale IP |
+| `uptime.home` | D630 Tailscale IP |
+| `n8n.home` | D630 Tailscale IP |
+| `vikunja.home` | D630 Tailscale IP |
+| `vaultwarden.home` | D630 Tailscale IP |
 
 Caddy then routes by hostname to the correct container on the correct internal network.
 
@@ -69,7 +69,7 @@ Caddy then routes by hostname to the correct container on the correct internal n
 
 ```
 Your device
-  │  (NetBird mesh)
+  │  (Tailscale mesh)
   ▼
 D630 :443
   │  (Caddy — reverse proxy + TLS termination)
@@ -78,13 +78,13 @@ D630 :443
   └──► services_net  ──► n8n / Vikunja / VaultWarden
 ```
 
-NetBird itself (`network_net`) is not proxied through Caddy — it operates at the network layer, below HTTP.
+Tailscale itself (`network_net`) is not proxied through Caddy — it operates at the network layer, below HTTP.
 
 ---
 
 ## Notes
 
 - **No ports exposed to the internet.** Ever.
-- **NetBird is the only entry point.** No SSH without being on the mesh first.
+- **Tailscale is the only entry point.** No SSH without being on the mesh first.
 - AdGuard Home also serves as the upstream DNS resolver for all containers (optional but recommended — consistent DNS behavior inside and outside Docker).
-- Rclone backups go out through NetBird or directly — not proxied through Caddy.
+- Rclone backups go out through Tailscale or directly — not proxied through Caddy.
