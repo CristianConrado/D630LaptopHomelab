@@ -34,7 +34,7 @@ Click START and wait for it to finish.
 2. Press **F12** repeatedly during boot → boot menu appears
 3. Select your USB drive
 
-![F12 boot menu on the D630](screenshots/boot-menu.png)
+![F12 boot menu on the D630](screenshots/boot-menu.JPG)
 
 4. In the Debian menu select **Install** (not Graphical Install — same thing, no mouse)
 
