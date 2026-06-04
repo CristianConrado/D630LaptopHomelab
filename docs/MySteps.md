@@ -75,8 +75,6 @@ Select **Guided - use entire disk**
 - All files in one partition
 - Finish partitioning and write changes to disk → **Yes**
 
-![Partitioning confirmation screen](screenshots/partitioning-confirm.png)
-
 > ⚠️ This will erase everything on the D630's internal disk
 
 ---
