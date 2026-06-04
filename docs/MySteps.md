@@ -106,8 +106,6 @@ Use spacebar to check/uncheck:
 
 **Only SSH server and standard system utilities.** Everything else unchecked.
 
-![Software selection with only SSH server and standard system utilities checked](screenshots/software-selection.png)
-
 ---
 
 ## 8. GRUB
