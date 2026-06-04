@@ -117,7 +117,8 @@ Use spacebar to check/uncheck:
 
 ## 9. First boot
 
-The system boots into a text login screen. No need to log in here.
+The system boots into a text login screen.
+I recommend, installing network manager via ethernet so you can have WIFI working.
 
 From your main PC, find the IP assigned to the D630 by your router:
 - Check your router's admin interface, or
