@@ -56,7 +56,7 @@ Service uptime and status monitoring.
 ## Networking
 
 ### Tailscale
-Self-hosted mesh VPN solution.
+Mesh VPN solution.
 
 ### AdGuard Home
 DNS-level ad blocking and internal DNS rewrites.
