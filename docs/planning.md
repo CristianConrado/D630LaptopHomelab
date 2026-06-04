@@ -55,7 +55,7 @@ Service uptime and status monitoring.
 
 ## Networking
 
-### NetBird
+### Tailscale
 Self-hosted mesh VPN solution.
 
 ### AdGuard Home
