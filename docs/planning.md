@@ -38,7 +38,7 @@ Main dashboard for accessing and organizing services.
 
 ## Container Management
 
-### Dockhand
+### Dockge
 Container management and visibility.
 
 ---
