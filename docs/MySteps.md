@@ -171,11 +171,11 @@ sudo docker run hello-world
 
 exit
 ```
-![Docker Hello world](screenshots/hello-world.png)
+
 After reconnecting via SSH, verify Docker is working:
 
 ```bash
 docker run hello-world
 ```
-
+![Docker Hello world](screenshots/hello-world.png)
 If you see Docker's welcome message, the system is ready to start deploying services.
