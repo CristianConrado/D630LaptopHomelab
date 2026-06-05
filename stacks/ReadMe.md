@@ -64,8 +64,7 @@ Reverse proxy and web routing configuration.
 ### VPN
 Private networking and secure remote access.
 
-- `netbird`
-- `acls`
+- `tailscale`
 
 ---
 
