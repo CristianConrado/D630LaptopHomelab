@@ -31,13 +31,12 @@ The goal is to build a lightweight, modular, and secure homelab capable of runni
 | Vaultwarden    | Password manager        |
 | Vikunja        | Task management         |
 | n8n            | Automation              |
-| Syncthing      | File synchronization    |
 
 ---
 
 # 🔥 Important Notes
 
-* Netbird acts as the secure entrypoint into the homelab
+* Tailscale acts as the secure entrypoint into the homelab
 * Caddy handles reverse proxying and HTTPS internally
 * Services are isolated using Docker networks
 * Homepage is used as the central dashboard
