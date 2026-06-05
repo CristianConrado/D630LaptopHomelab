@@ -7,7 +7,7 @@ services:
       - 3000:3000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - dockhand_data:home/cristian/docker/dockhand/data #your absoulte path to thedata directory here
+      - dockhand_data:/home/cristian/docker/dockhand/data #your absoulte path to thedata directory here
 
 volumes:
   dockhand_data:
