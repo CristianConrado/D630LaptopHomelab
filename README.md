@@ -23,7 +23,7 @@ The goal is to build a lightweight, modular, and secure homelab capable of runni
 | Docker         | Container runtime       |
 | Dockhand       | Docker stack management |
 | Caddy          | Reverse proxy and HTTPS |
-| NetBird        | Secure VPN access       |
+| Tailscale      | Secure VPN access       |
 | AdGuard Home   | DNS filtering           |
 | Homepage       | Dashboard               |
 | Uptime Kuma    | Monitoring services     |
@@ -37,7 +37,7 @@ The goal is to build a lightweight, modular, and secure homelab capable of runni
 
 # 🔥 Important Notes
 
-* NetBird acts as the secure entrypoint into the homelab
+* Netbird acts as the secure entrypoint into the homelab
 * Caddy handles reverse proxying and HTTPS internally
 * Services are isolated using Docker networks
 * Homepage is used as the central dashboard
