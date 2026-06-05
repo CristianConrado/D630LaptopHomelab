@@ -31,3 +31,6 @@ and that made every call to my tailnet take me to my homepage service. REMEMBER 
 
 ## 4 AdGuard Home
 For the final networking section, I want to pair the SSL from caddy with the tailnet from Tailscale, to have my homepage certified. That way i only need to be redirected from there. I am going to start from here: https://hub.docker.com/r/adguard/adguardhome. 
+
+## 5 Beszel
+While planning I wanted to add Uptime kuma, but seeing how seemlessly beszel works not only for monitoring the hardware, but also the containers, I think I will only keep Beszel.
