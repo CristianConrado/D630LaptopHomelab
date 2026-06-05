@@ -11,10 +11,10 @@ Containerized workflow automation and integrations.
 
 ---
 
-### Bootstrap
+### Dockge
 Core deployment and initialization utilities.
 
-- `dockerhand` — Docker environment bootstrap and management
+- `Dockge` — Docker environment management
 
 ---
 
