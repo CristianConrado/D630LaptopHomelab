@@ -44,6 +44,3 @@ I never thought about this, but after watching a video about it in TikTok (100% 
 
 ## 8 n8n
 Like I had in a previous homelab, I would like to have n8n running, in my case because I wanted to have my expenses sorted by just uploading a picture thanks to AI. 
-
-## 9 VaultWarden
-Finally I wanted to add a password manager, and with Vaultwarden i can have that locally, without any company having a copy or selling data about what passwords do i have saved.
