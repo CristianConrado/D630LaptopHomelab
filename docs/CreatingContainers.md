@@ -40,4 +40,10 @@ Following the guide in the Beszel page, I first deployed the Beszel instance, an
 After trying Beszel alone, it didnt give me a lot of info about the services, if they were up or down, it just said State = None. That is why I went back to the first version of this homelab and took the reliable Uptime Kuma and added it into the planning. And it was also really easy to set up, just went to https://uptimekuma.org/ and copied and tweaked the docker compose given. Then I added notifications.
 
 ## 7 Vikunja
-I never thought about this, but after watching a video about it in TikTok (100% reliable source) I decided to give it a go, after seeing it supported SQLite, crucial for this hardware, and that it was an easy setup following the guide in https://vikunja.io/install/ where you are given, the commands for permissions, the compose and the caddy section, it was a piece of cake. Later I added, with the CalDAV token the calendar in my other devices so I have it all synced up.
+I never thought about this, but after watching a video about it in TikTok (100% reliable source) I decided to give it a go, after seeing it supported SQLite, crucial for this hardware, and that it was an easy setup following the guide in https://vikunja.io/install/ where you are given, the commands for permissions, the compose and the caddy section, it was a piece of cake. Later I added, with the CalDAV token the calendar in my other devices so I have it all synced up, however it was not working propperly at least for my iPhone so I instead decided to go through the web service and save it as a web app.
+
+## 8 n8n
+Like I had in a previous homelab, I would like to have n8n running, in my case because I wanted to have my expenses sorted by just uploading a picture thanks to AI. 
+
+## 9 VaultWarden
+Finally I wanted to add a password manager, and with Vaultwarden i can have that locally, without any company having a copy or selling data about what passwords do i have saved.
