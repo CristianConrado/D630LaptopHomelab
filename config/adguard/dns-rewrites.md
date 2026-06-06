@@ -1,2 +1,4 @@
-I do a rewrite with a wildcard, so every domain ended in .homelab gets directed to the server
+I do a rewrite with a wildcard, so every domain ended in .homelab gets directed to the server.
+```bash
 *.homelab -> 100.102.1.114
+```
