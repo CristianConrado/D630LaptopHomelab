@@ -22,7 +22,7 @@ Each functional group lives in its own isolated Docker network. Caddy is the onl
 | `network_net` | Tailscale |
 | `dns_net` | AdGuard Home |
 | `monitoring_net` | Beszel, Uptime Kuma, Homepage |
-| `services_net` | n8n, Vikunja, VaultWarden |
+| `services_net` | n8n, Vikunja |
 
 Caddy connects to all networks so it can reach every backend:
 
