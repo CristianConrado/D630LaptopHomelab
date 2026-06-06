@@ -1,1 +1,2 @@
 First issue i found, because i didnt research enough is that i wanted to test dockhand, but it cannot be deployed in this CPU architecture aparently. Thus I am moving to dockge which is lightweight and i already tried before.
+Second issue, i wanted to have Vaultwarden originally, but after not knowing how to set it up without HTTPS, I decided to change to Stirling to maniupulate PDFs which can help me with uni.
