@@ -2,6 +2,7 @@
 First we want to install Dockge to manage the rest of the containers we are going to have. For that we have the yaml file found in the /stacks/Dockge directory.
 Info extracted directly from https://dockge.kuma.pet/
 First we create a folder where we want to store our data, in my case it was /home/cristian/docker/dockge/data.
+This is the most important container, that is why I write more info about what i did
 
 ```bash
 # Create directories (requires sudo for /opt) and set permissions
@@ -33,4 +34,10 @@ and that made every call to my tailnet take me to my homepage service. REMEMBER 
 For the final networking section, I want to pair the SSL from caddy with the tailnet from Tailscale, to have my homepage certified. That way i only need to be redirected from there. I am going to start from here: https://hub.docker.com/r/adguard/adguardhome. 
 
 ## 5 Beszel
-While planning I wanted to add Uptime kuma, but seeing how seemlessly beszel works not only for monitoring the hardware, but also the containers, I think I will only keep Beszel.
+Following the guide in the Beszel page, I first deployed the Beszel instance, and after that I got the Agent compose given to me and added it to my docker compose. It is a useful service for one Server, but i belive it shines at its brightest with more nodes.
+
+## 6 UptimeKuma
+After trying Beszel alone, it didnt give me a lot of info about the services, if they were up or down, it just said State = None. That is why I went back to the first version of this homelab and took the reliable Uptime Kuma and added it into the planning. And it was also really easy to set up, just went to https://uptimekuma.org/ and copied and tweaked the docker compose given. Then I added notifications.
+
+## 7 Vikunja
+I never thought about this, but after watching a video about it in TikTok (100% reliable source) I decided to give it a go, after seeing it supported SQLite, crucial for this hardware, and that it was an easy setup following the guide in https://vikunja.io/install/ where you are given, the commands for permissions, the compose and the caddy section, it was a piece of cake.
