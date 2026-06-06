@@ -45,11 +45,10 @@ Infrastructure monitoring and uptime tracking.
 ---
 
 ### Productivity
-Personal productivity and synchronization services.
+Personal productivity and learning.
 
 - `vikunja` — task management
-- `vaultwarden` — password manager
-- `syncthing` — file synchronization
+- `floci` — AWS deployment to learn
 
 ---
 
