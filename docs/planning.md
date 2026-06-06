@@ -74,9 +74,6 @@ Workflow automation platform.
 ### Vikunja
 Task manager / TODO management.
 
-### VaultWarden
-Self-hosted password manager.
-
 ---
 
 ## Backups
