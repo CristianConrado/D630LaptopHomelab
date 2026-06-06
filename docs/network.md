@@ -20,10 +20,10 @@ Your device
   │  (Tailscale mesh)
   ▼
 D630 :443
-  │  (Caddy — reverse proxy + TLS termination)
+  │  (Caddy — reverse proxy)
   ├──► dns_net       ──► AdGuard Home
   ├──► monitoring_net ──► Beszel / Uptime Kuma / Homepage
-  └──► services_net  ──► n8n / Vikunja / VaultWarden
+  └──► services_net  ──► n8n / Vikunja
 ```
 
 ---
