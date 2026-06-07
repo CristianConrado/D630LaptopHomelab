@@ -1,1 +1,32 @@
+services:
+  tailscale:
+    image: tailscale/tailscale:latest
+    hostname: tailscale
+    environment:
+      - TS_AUTHKEY=tskey-auth-kvqZhcP2t721CNTRL-C5vn8W9PcA8HdUZWDjhiA8ruN9saPSdj
+      - TS_STATE_DIR=/var/lib/tailscale
+      - TS_USERSPACE=false
+      - TS_SOCKET=/var/run/tailscale/tailscaled.sock
+    volumes:
+      - /home/cristian/docker/tailscale:/var/lib/tailscale
+      - /home/cristian/docker/tailscale/run:/var/run/tailscale
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - net_admin
+      - sys_module
+    restart: unless-stopped
+    network_mode: host
+   caddy:
+    image: caddy:latest
+    container_name: caddy
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - /path/to/Caddyfile:/etc/caddy/Caddyfile
+      - /path/to/data:/data
+      - /path/to/config:/config
+      - /path/to/tailscale/run:/var/run/tailscale
+    depends_on:
+      - tailscale
 
