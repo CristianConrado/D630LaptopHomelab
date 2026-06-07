@@ -6,7 +6,7 @@ services:
       - 5001:5001
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./data:/home/cristian/docker/dockge/data #your absolute path to the data directory
+      - ./data:./data #your absolute path to the data directory
       # Stacks Directory
       # ⚠️ READ IT CAREFULLY. If you did it wrong, your data could end up writing into a WRONG PATH.
       # ⚠️ 1. FULL path only. No relative path (MUST)
