@@ -33,15 +33,6 @@ The goal is to build a lightweight, modular, and secure homelab capable of runni
 
 ---
 
-# 🔥 Important Notes
-
-* Tailscale acts as the secure entrypoint into the homelab
-* Caddy handles reverse proxying and HTTPS internally
-* Services are isolated using Docker networks
-* Homepage is used as the central dashboard
-* Everything runs on Debian using Docker Compose
-
----
 
 # ❤️ Why This Project Exists
 
