@@ -1,1 +1,25 @@
+services:
+  beszel:
+    image: henrygd/beszel
+    container_name: beszel
+    restart: unless-stopped
+    environment:
+      - APP_URL=http://beszel.homelab
+    ports:
+      - 127.0.0.1:8090:8090
+    volumes:
+      - /home/docker/beszel/data:/beszel_data
+  beszel-agent:
+    image: henrygd/beszel-agent
+    container_name: beszel-agent
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /path/to/agent/data:/var/lib/beszel-agent
+    environment:
+      LISTEN: 45876
+      KEY: #YOUR SECRET KEY
+      TOKEN: #YOUR SECRET TOKEN
+      HUB_URL: http://localhost:8090
 
