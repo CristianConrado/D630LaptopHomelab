@@ -1,1 +1,18 @@
+services:
+  vikunja:
+    image: vikunja/vikunja
+    environment:
+      VIKUNJA_SERVICE_SECRET: #your secret
+      VIKUNJA_SERVICE_PUBLICURL: http://vikunja.homelab/
+      # The official image already presets this to /db/vikunja.db; it is shown
+      # explicitly here so the database file lives in the ./db volume below and
+      # state is persisted even if the container is destroyed.
+      VIKUNJA_DATABASE_PATH: /db/vikunja.db
+    ports:
+      - 127.0.0.1:3456:3456
+    volumes:
+      - /path/to/data:/app/vikunja/files
+      - /path/to/db:/db
+    restart: unless-stopped
 
+networks: {}
