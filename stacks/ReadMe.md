@@ -52,17 +52,11 @@ Personal productivity and learning.
 
 ---
 
-### Proxy
-Reverse proxy and web routing configuration.
+### Proxy - VPN
+Reverse proxy and web routing configuration. Private networking and secure remote access.
 
 - `caddy`
 - `Caddyfile`
-
----
-
-### VPN
-Private networking and secure remote access.
-
 - `tailscale`
 
 ---
