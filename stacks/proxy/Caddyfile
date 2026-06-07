@@ -1,1 +1,46 @@
+{
+admin 0.0.0.0:2019 {
+    origins localhost 127.0.0.1 0.0.0.0 0.0.0.0:2019
+    }
+default_bind 100.102.1.114
+}
 
+your.tailnet.here {
+    reverse_proxy localhost:3333 {
+        header_up Host localhost
+    }
+}
+
+http://dockge.homelab {
+    reverse_proxy localhost:5001
+}
+
+http://adguard.homelab {
+    reverse_proxy 127.0.0.1:8080
+}
+
+http://beszel.homelab {
+    request_body {
+        max_size 10MB
+    }
+    reverse_proxy 127.0.0.1:8090 {
+        transport http {
+            read_timeout 360s
+        }
+    }
+}
+
+http://uptimekuma.homelab {
+    reverse_proxy 127.0.0.1:3001
+}
+
+http://vikunja.homelab {
+    reverse_proxy 127.0.0.1:3456
+}
+
+http://n8n.homelab {
+    reverse_proxy localhost:5678
+}
+http://stirling.homelab {
+        reverse_proxy localhost:8008
+}
