@@ -1,1 +1,14 @@
-
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:2
+    container_name: uptime-kuma
+    restart: always
+    ports:
+      - 127.0.0.1:3001:3001
+    volumes:
+      - /path/to/data:/app/data # Configuring persistent storage
+      - /var/run/docker.sock:/var/run/docker.sock # GET THE DOCKER INSTANCES
+    environment:
+      - TZ=Europe/Madrid # Set the timezone (change to your preferred local timezone so monitoring times are the same)
+      - UMASK=0022 # Set your file permissions manually
+networks: {}
