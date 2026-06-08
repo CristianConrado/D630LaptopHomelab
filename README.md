@@ -30,6 +30,7 @@ The goal is to build a lightweight, modular, and secure homelab capable of runni
 | Beszel         | Monitoring Hardware     |
 | Vikunja        | Task management         |
 | n8n            | Automation              |
+| VaultWarden    | Password Manager        |
 
 ---
 
