@@ -9,5 +9,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro # (optional) For docker integrations
     environment:
       HOMEPAGE_ALLOWED_HOSTS: localhost # required, may need port.
+    restart: unless-stopped
 networks: {}
 
