@@ -32,7 +32,7 @@ docker compose up -d
 
 ---
 
-### 2. Tailscale & Caddy (The Gateway)
+### 2. Tailscale & Caddy
 **Purpose:** The single most crucial setup for remote access. This stack allows me to securely connect to my homelab from anywhere in the world without exposing open ports to the public internet.
 
 * **The Breakthrough:** I realized I could leverage Tailscale's **MagicDNS** to effortlessly generate valid SSL certificates for my services. 
