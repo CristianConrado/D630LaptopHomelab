@@ -44,3 +44,6 @@ I never thought about this, but after watching a video about it in TikTok (100% 
 
 ## 8 n8n
 Like I had in a previous homelab, I would like to have n8n running, in my case because I wanted to have my expenses sorted by just uploading a picture thanks to AI. 
+
+## 9 VaultWarden
+Finally I am going to add a password manager, I just followed the guide on github https://github.com/dani-garcia/vaultwarden and teaked some things so I can use it with the Tailscale services to have https.
