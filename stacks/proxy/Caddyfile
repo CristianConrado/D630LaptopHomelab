@@ -41,6 +41,6 @@ http://vikunja.homelab {
 http://n8n.homelab {
     reverse_proxy localhost:5678
 }
-http://stirling.homelab {
-        reverse_proxy localhost:8008
+http://vaultwarden.homelab {
+    reverse_proxy localhost:8888
 }
