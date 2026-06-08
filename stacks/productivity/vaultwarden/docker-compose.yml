@@ -1,1 +1,13 @@
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: unless-stopped
+    environment:
+      DOMAIN: https://vaultwarden.shark-caiman.ts.net/
+    volumes:
+      - /home/cristian/docker/vaulwarden/data:/data/
+    ports:
+      - 127.0.0.1:8888:80
+networks: {}
 
