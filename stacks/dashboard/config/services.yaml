@@ -1,1 +1,39 @@
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services/
 
+- Monitoring:
+    - Beszel:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/beszel.png
+        href: link
+    - UptimeKuma:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/uptime-kuma.png
+        href: link
+        widget:
+          type: uptimekuma
+          url: http://tailscaleip:3001
+          slug: floating
+
+- Docker and DNS:
+    - Dockge:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/dockge.png
+        href: link
+
+    - Adguard:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/adguard-home.png
+        href: link
+        widget:
+          type: adguard
+          url: http://tailscaleip:8080
+          username: username
+          password: password
+
+- Services:
+    - Viukunja:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/vikunja.png
+        href: link
+    - VaultWarden:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/vaultwarden-light.png
+        href: link
+    - n8n:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/n8n.png
+        href: link
